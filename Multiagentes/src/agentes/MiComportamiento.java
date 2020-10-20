@@ -1,14 +1,17 @@
+package agentes;
+
+import jade.core.Agent;
 import jade.core.behaviours.Behaviour;
 
 public class MiComportamiento extends Behaviour {
 
-    private MiAgente agente;
+    private Agent agente;
 
-    public void setAgente(MiAgente agente) {
+    public void setAgente(Agent agente) {
         this.agente = agente;
     }
 
-    public MiAgente getAgente() {
+    public Agent getAgente() {
         return agente;
     }
 
@@ -21,4 +24,5 @@ public class MiComportamiento extends Behaviour {
     public boolean done() {
         return true;
     }
+
 }

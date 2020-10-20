@@ -1,3 +1,5 @@
+package agentes;
+
 import jade.core.Agent;
 import jade.wrapper.*;
 
@@ -13,7 +15,7 @@ public class MiAgente extends Agent {
     public void crearAgenteAPartirDeAgente() {
         AgentContainer c = getContainerController();
         try {
-            AgentController a = c.createNewAgent(c.getName() + "B", "MiAgente", null);
+            AgentController a = c.createNewAgent(c.getName() + "B", "agentes.MiAgente", null);
             a.start();
         } catch (StaleProxyException e) {}
     }
